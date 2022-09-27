@@ -331,13 +331,10 @@ footer section {
         overflow-y: hidden;
     }
 
-    .contenedor_encriptado {
-        width: 100%;
-    }
 
     .box_encriptado {
-        grid-column-end: auto;
-        width: 100%;
+        grid-column: 1 / span 3;
+        
     }
 
     .text_area {
