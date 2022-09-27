@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador - Challenge 1</title>
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="./images/Logo-1.png" alt="">
+        </section>
+        <section class="title">
+            <h1 class="ocultar">Encriptador - Challenge ONE [Oracle Next Education]</h1>
+            <h1 class="mostrar">Encriptador</h1>
+            <h4 class="mostrar">Challenge ONE</h4>
+        </section>
+    </header>
+    <main>
+        <section class="container-inputs">
+
+            <section class="text_area">
+                <textarea name="" id="text__area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </section>
+            <section class="botones-encriptado">
+                <section class="advertencia">
+                    <div class="icon">
+                        <img id="alert_icon" src="./images/Group.png">
+                    </div>
+                    <p class="alert_minusculas">Solo letras minusculas y sin acento</p>
+                </section>
+                <section class="botones">
+                    <button class="boton" onclick="Encriptar()" id="btn_encriptar">Encriptar</button>
+                    <button class="boton" onclick="Desencriptar()" id="btn_desencriptar">Desencriptar</button>
+                </section>
+            </section>
+
+        </section>
+
+        <section id="sin_texto" class="box_encriptado ">
+            <div class="text_encriptado">
+                <div class="img-encript">
+                    <img id="muneco" src="./images/Muñeco.png">
+                </div>
+                <div class="no_encontrado">
+                    <p class="encriptacion">
+                        Ningún mensaje fue encontrado
+                    </p>
+                    <p>
+                        Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="con_texto" class="box_encriptado contenedor_encriptado hidden">
+            <section class=" limitador">
+                <textarea readonly="readonly" id="texto_encriptado">
+                    
+                </textarea>
+            </section>
+            <section class="botones-encriptado">
+                <section class="botones copiar">
+                    <button onclick="Copiar_texto()" class="boton" id="btn_copiar">Copiar</button>
+                </section>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <p>Este encriptador fue realizado por:</p>
+            <p class="name">Fabian Cruz</p>
+        </section>
+    </footer>
+    <script src="./js/index.js "></script>
+</body>
+</html>
