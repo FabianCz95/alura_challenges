@@ -359,4 +359,8 @@ footer section {
         flex-direction: column;
     }
     
+    #btn_copiar {
+        width: 100%;
+    }
+
 }
