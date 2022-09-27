@@ -1,8 +1,6 @@
 function Mostrar() {
     document.getElementById("sin_texto").style.display = "none";
     document.getElementById("con_texto").style.display = "grid"
-
-
 }
 
 function Ocultar() {
@@ -74,8 +72,6 @@ function Desencriptar() {
         const element = dividir_palabras[i];
         var deletrear = element.split('');
         var newDesencriptado = [];
-
-        console.log(deletrear);
 
         for (let i = 0; i < deletrear.length; i++) {
             let ele = deletrear[i];
